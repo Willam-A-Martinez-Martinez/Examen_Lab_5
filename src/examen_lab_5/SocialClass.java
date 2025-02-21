@@ -38,21 +38,21 @@ public abstract class SocialClass {
     public void myProfile(){
         info="User: "+username+"\n Timeline: \n";
         timeline();
-        info+="\n Amigos: "+mostrarAmigos();
+        info+="\n Amigos: "+showFriends();
     }
     
-    public String mostrarAmigos(){
-        String amigos="";
+    public String showFriends(){
+        String friendsTxt="";
         for (int contar = 0; contar < friends.size(); contar++) {
             if (friends.get(contar) != null && contar<10) {
-                amigos += "\n- " + friends.get(contar);
+                friendsTxt += "\n- " + friends.get(contar);
             }
         }
-        if (amigos.equals("")) {
+        if (friendsTxt.equals("")) {
             return "No tiene amigos agregados";
         }
 
-        return amigos;
+        return friendsTxt;
     }
     
     public String getProfile(){
