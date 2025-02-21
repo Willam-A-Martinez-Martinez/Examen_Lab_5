@@ -8,6 +8,6 @@ package examen_lab_5;
  *
  * @author Mario
  */
-public class Facebook  {
+public class Facebook {
     
 }
