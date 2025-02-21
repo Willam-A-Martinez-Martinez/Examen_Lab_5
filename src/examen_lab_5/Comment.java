@@ -4,6 +4,7 @@
  */
 package examen_lab_5;
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 /**
@@ -11,16 +12,17 @@ import java.util.Calendar;
  * @author DELL
  */
 public class Comment {
+
     private int postId;
     private String autor;
     private String comentario;
     private Calendar fecha;
 
-    public Comment (int id, String autor, String comentario){
-        this.postId=id;
-        this.autor=autor;
-        this.comentario=comentario;
-        fecha=Calendar.getInstance();
+    public Comment(int id, String autor, String comentario) {
+        this.postId = id;
+        this.autor = autor;
+        this.comentario = comentario;
+        fecha = Calendar.getInstance();
     }
 
     public int getPostID() {
@@ -39,7 +41,9 @@ public class Comment {
         return fecha;
     }
 
-    public String print(){
-        return autor+ " - "+fecha +"\n" + comentario;
+    public String toString() {
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+        String fechaStr = sdf.format(fecha.getTime());
+        return autor + " - " + fechaStr + "\n" + comentario;
     }
 }
