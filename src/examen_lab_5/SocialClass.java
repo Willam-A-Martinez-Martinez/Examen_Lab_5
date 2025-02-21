@@ -13,6 +13,7 @@ import java.util.ArrayList;
 public abstract class SocialClass {
     public ArrayList <String> friends, posts;
     public String username;
+    public String postTL;
     public String info;
 
     public SocialClass(String username) {
@@ -36,8 +37,9 @@ public abstract class SocialClass {
     public abstract void timeline();
     
     public void myProfile(){
-        info="User: "+username+"\n Timeline: \n";
+        info="User: "+username+"\n Timeline:";
         timeline();
+        info+=postTL;
         info+="\n Amigos: "+showFriends();
     }
     
