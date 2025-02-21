@@ -6,6 +6,11 @@ public class UberSocial {
 
     ArrayList<SocialClass> cuentaSocial;
 
+    public UberSocial(){
+        cuentaSocial = new ArrayList<>();
+        
+    }
+    
     public SocialClass buscar(String nombreUsuario) {
         return buscarRec(cuentaSocial, nombreUsuario, 0);
     }
@@ -78,5 +83,9 @@ public class UberSocial {
         }
         cuenta.myProfile();
         return cuenta.getProfile();
+    }
+    
+    public void UberGui(){
+        
     }
 }
