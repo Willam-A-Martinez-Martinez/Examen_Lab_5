@@ -6,4 +6,5 @@ public class UberSocial {
     ArrayList <SocialClass> cuentaSocial;
     
     q
+            xd
 }
