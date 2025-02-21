@@ -9,5 +9,5 @@ package examen_lab_5;
  * @author DELL
  */
 public interface Commentable {
-    
+    boolean addComment(Comment comment);
 }
