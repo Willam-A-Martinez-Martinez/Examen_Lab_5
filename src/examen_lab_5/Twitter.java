@@ -16,6 +16,7 @@ public class Twitter extends SocialClass{
     
     public void timeline(){
         postTL="";
+        
         for (int cont = 0; cont < posts.size(); cont++) {
             postTL="\nPost 1: "+posts.get(cont);
         }
