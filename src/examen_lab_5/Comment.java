@@ -40,6 +40,6 @@ public class Comment {
     }
 
     public String print(){
-        return autor+ " - " + fecha +"\n" + comentario;
+        return autor+ " - "+fecha +"\n" + comentario;
     }
 }
