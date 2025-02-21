@@ -18,7 +18,7 @@ public class Twitter extends SocialClass{
         postTL="";
         
         for (int cont = 0; cont < posts.size(); cont++) {
-            postTL="\nPost 1: "+posts.get(cont);
+            postTL+="\nPost "+(cont+1)+": "+posts.get(cont);
         }
     }
     
